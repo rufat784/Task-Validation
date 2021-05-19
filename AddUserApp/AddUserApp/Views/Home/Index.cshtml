@@ -1,0 +1,13 @@
+﻿@model List<User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <ul class="list-group">
+        @foreach (User user in Model)
+        {
+            <li class="list-group-item my-2">@user.Email</li>
+        }
+    </ul>
+</div>
